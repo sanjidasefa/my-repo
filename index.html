@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my-repo</title>
+  <title>registration form</title>
 </head>
 <body>
-  
+  <form>
+    <h1 style="background-color: antiquewhite; text-align: center;">registration form</h1>
+    
+      <fieldset style="background-color: rgb(197, 248, 224);">
+        <legend> enter your personal enformation </legend>
+          <label for=""> name</label>
+          <input type="text" id="text" name="name"><br></br>
+          <label for="">address</label>
+          <input type="text" name="address" id="text"> <br></br> 
+          <label for="">Phone</label>
+          <input type="number" name="Phone" id="number"><br></br> 
+          <label for="">e-mail</label>
+          <input type="email" name="e-mail" id="e-mail"><br></br> 
+          <label for="">brithdate</label>
+          <input type="date" name="brithdate" id="date"><br></br>
+          <label for="">gender</label>
+          <input type="radio" name="gender" id="input-gender">male
+          <input type="radio" name="gender" id="input-gender">female
+      </fieldset><br>
+      <fieldset style="background-color: rgb(197, 238, 224);">
+        <legend> educational status </legend>
+          <label for="">institute</label>
+          <input type="text" placeholder="enter your institute name" required><br><br>
+          <label for="">passing year</label>
+          <input type="number" name="passing" min="2022" max="2025"><br><br>
+          <label for="">qualification</label>
+          <input type="checkbox">Ssc
+          <input type="checkbox">Hsc
+          <input type="checkbox">diploma <br><br>
+          <label for="">subject</label>
+          <select name="" id="">
+            <option value="">scince</option>
+            <option value="">commerce</option>
+            <option value="">art</option>
+          </select><br>
+      </fieldset><br>
+       <!-- diffrent structure -->
+      <fieldset style="background-color: rgb(197, 238, 224);" >
+        <legend >others information(optional)</legend>
+        <div>
+           <label for="">upload your photo</label>
+           <input type="file"><br><br>
+        </div>
+        <div>
+          <label for="">choice color</label>
+          <input type="color">
+        </div><br>
+        <div>
+          <label for="">password</label>
+          <input type="password" placeholder="password" minlength="6">
+        </div><br>
+      </fieldset><br>
+      <input type="submit" value="register"><br><br>
+      <input type="submit" value="back">
+  </form>
 </body>
 </html>
